@@ -22,6 +22,15 @@ import {MatIconModule} from '@angular/material/icon';
 import { authInterceptorProviders } from './services/auth.interceptor';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './components/About/about/about.component';
+import { BannerComponent } from './components/Banner/banner/banner.component';
+import { EducacionComponent } from './components/Educacion/educacion/educacion.component';
+import { ExperienciaComponent } from './components/Experiencia/experiencia/experiencia.component';
+import { ProyectosComponent } from './components/Proyectos/proyectos/proyectos.component';
+import { SkillsComponent } from './components/Skills/skills/skills.component';
+import { ActualizarPersonaComponent } from './components/Banner/actualizar-persona/actualizar-persona.component';
+import { NuevaPersonaComponent } from './components/Banner/nueva-persona/nueva-persona.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +40,16 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
     LoginComponent,
     HomeComponent,
     DashboardComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    FooterComponent,
+    AboutComponent,
+    BannerComponent,
+    EducacionComponent,
+    ExperienciaComponent,
+    ProyectosComponent,
+    SkillsComponent,
+    ActualizarPersonaComponent,
+    NuevaPersonaComponent
   ],
   imports: [
     BrowserModule,

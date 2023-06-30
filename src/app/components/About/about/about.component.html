@@ -1,0 +1,57 @@
+
+<section id="about" class="min-vh-100 bg-hero-image" style="--bg-image: url(../../../../assets/img/fullstack.jpg)">
+    
+    <article class="bg-alpha-color min-vh-100 d-flex align-items-center">
+        
+        <div class="container">
+            <article class="col-12 col-lg-6 mt-5">
+
+
+           <!-------para login------->     
+              <div class="row">
+                <div class="col-2">
+                    <button *ngIf="isLoggedIn" mat-button class="example-icon favorite-icon my-5 "
+                aria-label="Example icon-button with heart icon">
+                <i class="bi bi-pencil-fill fs-3"></i>
+              </button>
+                </div>
+                <div class="col-10">
+                    <button *ngIf="isLoggedIn" mat-button class="example-icon favorite-icon my-5 "
+                aria-label="Example icon-button with heart icon">
+                <i class="bi bi-trash3-fill fs-3"></i>
+              </button>
+                </div>
+              </div>
+
+
+
+
+                
+          <h2 class="fs-2">Sobre Mí</h2>
+          <p class="my-5 fs-4">
+            <em>Soy una persona <b>comprometida</b><br> con el trabajo y la mejora continua, 
+            mi productividad tiene que verse reflejada en la organización.  
+            Me gusta trabajar en completo silencio. <b>La creatividad</b> es algo fundamental.</em>
+          </p>
+          <p class="fs-4 fw-bold ">
+            Algunas Cualidades:
+          </p>
+               
+
+                <div class="row mt-5">
+                    <div class="col fs-5">
+                        <p><i class="bi bi-check-lg"></i>Compromiso</p>
+                        <p><i class="bi bi-check-lg"></i>Proactividad</p>
+                        <p><i class="bi bi-check-lg"></i>Sociabilidad</p>
+                    </div>
+
+                    <div class="col fs-5">
+                        <p><i class="bi bi-check-lg"></i>Autodidacta</p>
+                        <p><i class="bi bi-check-lg"></i>Flexibilidad</p>
+                        <p><i class="bi bi-check-lg"></i>Creatividad</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </article>
+</section>

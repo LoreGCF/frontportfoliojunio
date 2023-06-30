@@ -7,6 +7,8 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ActualizarPersonaComponent } from './components/Banner/actualizar-persona/actualizar-persona.component';
+import { NuevaPersonaComponent } from './components/Banner/nueva-persona/nueva-persona.component';
 
 const routes: Routes = [
   {
@@ -22,24 +24,54 @@ const routes: Routes = [
   {
     path : 'login',
     component : LoginComponent,
-    pathMatch : 'full'
+    
   },
   {
     path:'admin',
     component:DashboardComponent,
-    pathMatch:'full',
-    canActivate:[AdminGuard]
+   
+    canActivate:[AdminGuard],
+
+    children:[
+      {
+        path:'actualizar-persona',
+        component:ActualizarPersonaComponent
+      },
+      {
+        path: 'nueva-persona',
+        component:NuevaPersonaComponent
+      }
+
+
+    ]
+
   },
   {
     path:'user-dashboard',
     component:UserDashboardComponent,
-    pathMatch:'full',
+    
     canActivate:[NormalGuard]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'disabled',
+  anchorScrolling: 'enabled',
+  scrollOffset: [0, 64] }   
+   )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+
+/*
+@NgModule({
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'disabled',
+  anchorScrolling: 'enabled',
+  scrollOffset: [0, 64] }   
+  )],
+  //imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+*/

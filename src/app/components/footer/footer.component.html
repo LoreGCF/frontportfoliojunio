@@ -1,0 +1,15 @@
+<footer class="bg-dark p-3 ">
+    <div class="container text-center">
+    <nav class="d-flex justify-content-evenly">
+           <a class="d-block d-lg-none" href="https://github.com/LoreGCF/LoreGCF.git" target="_blank"><i class="bi bi-github fs-3"></i></a>
+           <a class="d-block d-lg-none" href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
+           <a class="d-block d-lg-none" href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100009782955889" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+           
+           <a  class="d-block d-lg-none"  *ngIf = "!isLoggedIn"  [routerLink]="'/login'"><i class="bi bi-person-fill-lock fs-2"></i></a>
+           <a  class="d-block d-lg-none"  *ngIf = "isLoggedIn" 
+           (click) = "logout()" ><i class="bi bi-person-fill fs-2"></i></a>
+          </nav>
+    <p class="text-white">&copy;2023 @LorenaGarciaCabanaFlores</p>
+    </div>
+  </footer>
+ 

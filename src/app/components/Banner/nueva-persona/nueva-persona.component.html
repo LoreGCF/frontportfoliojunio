@@ -1,0 +1,37 @@
+<div>
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cargo">Cargo</label>
+            <input type="text" class="form-control" id="cargo" name="cargo" [(ngModel)]="cargo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion1">Descripcion1</label>
+            <input type="text" class="form-control" id="descripcion1" name="descripcion1" [(ngModel)]="descripcion1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion2">Descripcion2</label>
+            <input type="text" class="form-control" id="descripcion2" name="descripcion2" [(ngModel)]="descripcion2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion3">Descripcion3</label>
+            <input type="text" class="form-control" id="descripcion3" name="descripcion3" [(ngModel)]="descripcion3" required>
+        </div>
+
+        <div class="form-group">
+            <label for="img">Img</label>
+            <input type="text" class="form-control" id="img" name="img" [(ngModel)]="img" required>
+        </div>
+        <button type="submit">
+            Agregar Persona
+        </button>
+    </form>
+</div>
+
